@@ -33,7 +33,7 @@ public class EmployeeController {
             return "add-employee";
         }
         employeeService.saveEmployee(employee);
-        return "redirect:/";
+        return "redirect:/homepage";
     }
 
     @GetMapping("/UpdateForm/{id}")
